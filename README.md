@@ -1,4 +1,4 @@
-# API_lab
+# API Lab
 
 In lab today, we will get and explore the data you will be using for Assignment 6.
 For your reference, here is the [Google Civic API documentation](https://developers.google.com/civic-information/docs/v2/)
