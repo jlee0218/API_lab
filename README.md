@@ -1,6 +1,6 @@
 # API_lab
 
-In lab today, we will get the data you will be using for Assignment 6 and ask some interesting questions about it.
+In lab today, we will get and explore the data you will be using for Assignment 6.
 For your reference, here is the [Google Civic API documentation](https://developers.google.com/civic-information/docs/v2/)
 
 But let's first explore what resources this API gives us access to and what information we must provide to get access. Spend some time clicking through the tabs on the left-hand side of the page.
@@ -14,6 +14,7 @@ the main part of it should be a function (e.g. 'repTable') that **takes
 address as the argument**, and returns a markdown table of **representatives**.
 
 So... we want to find a list of ______ for a given _______.
+
 (Hint: representatives, address)
 
 Navigate over to the API_lab.R file and let's begin.
