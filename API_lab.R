@@ -1,23 +1,25 @@
 ## What libraries do we need to load? 
-
+library(httr)
+library(jsonlite)
 ## Source in your hidden api-keys.R file
-
+source("keys.R")
 
 ##  Let's construct the API call.
-# base_uri <-
+base_uri <- "https://www.googleapis.com/civicinfo/v2"
 
-# resource <-
+resource <- "/representative"
 
-# query_params <- list(
-  # what (optional) parameters do we need?
-# )
+query_params <- list(
+  key = api_key, address = "185 E stevens Way NE, Seattle, WA 98195"
+)  
 
-# response <-
+address <- query_params[["address"]]
 
-# response_content <-
+response <- GET(paste0(base_uri, resource), query = query_params)
 
-# parsed_data <-
+response_content <- content(reponse, "text")
 
+parsed_data <- fromJSON(response_content)
 
 ## Yay! Now we should have our data. Let's View(parsed_data) to see what we have to work with.
 
